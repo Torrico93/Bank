@@ -16,6 +16,11 @@ public class UserController {
     @Autowired
     private UserService  userService;
 
+    @GetMapping(value = "/ping")
+    public String getPong(){
+        return "pong";
+    }
+
     @GetMapping(value = "/find-all")
     public List<UserEntity> findAll(){
         List<UserEntity> userEntity = userService.findAll();

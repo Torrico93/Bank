@@ -33,9 +33,15 @@ public class BankAccountEntity {
         return nameUser;
     }
 
+    public void setNameUser(String nameUser){
+        this.nameUser = nameUser;
+    }
+
     public int getCbu() {
         return cbu;
     }
+
+    public void setCbu(int cbu){this.balance = balance;}
 
     public int getBalance() {
         return balance;
